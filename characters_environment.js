@@ -111,13 +111,13 @@ function game() {
     stroke(255);
     strokeWeight(7);
     noFill();
-    ellipse(gameConfig.screenX / 2, gameConfig.screenY / 2 - 30, 160, 160)
-    changeGameStatud(mario)
+    ellipse(gameConfig.screenX / 2, gameConfig.screenY / 2 - 30, 160, 160);
+    changeGameStatud(mario);
   }
 }
 
 function startGame(){
-  gameStatus = "start";
+  GameStatus = "start";
 
   document.getElementById("status").innerHTML = "Game Is Loading";
 }
