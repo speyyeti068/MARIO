@@ -117,7 +117,7 @@ function game() {
 }
 
 function startGame(){
-  GameStatus = "start";
+  gameStatus = "start";
 
   document.getElementById("status").innerHTML = "Game Is Loading";
 }
@@ -125,7 +125,7 @@ function startGame(){
 
 // change game status if any key is pressed
 function changeGameStatud(character) {
-  if (gameStatus = "start" && noseX!="" && gameConfig.status === "start") {
+  if (gameStatus == "start" && noseX!="" && gameConfig.status === "start") {
     world_start.play();
     initializeCharacterStatus(mario);
     gameConfig.status = "play";
